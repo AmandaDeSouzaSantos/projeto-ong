@@ -1,8 +1,10 @@
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
+import { router } from 'expo-router';
 
-export default function Home() {
+
+export default function Home({ navigation }: any) {
   return (
     <View style={styles.container}>
       
@@ -18,9 +20,10 @@ export default function Home() {
 
       <Text style={styles.textoBemVindo}>Seja Bem Vindo!!</Text>
 
-      <TouchableOpacity style={styles.botaoContainer}>
-        <Text style={styles.botaoTexto}>{">"}</Text>
+      <TouchableOpacity style={styles.botaoContainer} onPress={() => navigation.navigate("Opcoes")}>
+        <Text style={styles.botaoTexto}>Ações</Text>
       </TouchableOpacity>
+
     </View>
   );
 }

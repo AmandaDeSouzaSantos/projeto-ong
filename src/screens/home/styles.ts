@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
   },
   imagem: {
     width: "100%",
-    height: 250,
+    height: 450,
     resizeMode: "cover",
     borderRadius: 10,
   },

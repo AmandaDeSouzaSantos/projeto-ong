@@ -3,23 +3,27 @@ import { Pressable, StyleSheet, Text, View } from "react-native";
 export const Home = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Feliz Vida</Text>
-            <Text style={styles.tituloSub}>ONG</Text>
+            <Text style={styles.titulo}>Associação Alegria do Amanhã</Text>
             <Text style={styles.descricao}>
-                A ONG Feliz Vida é uma instituição sem fins lucrativos dedicada ao
-                resgate de famílias em situação de vulnerabilidade, por meio de ações
-                socioeducativas e doações de alimentos para a população mais carente.
+                A Associação Alegria do Amanhã é uma instituição sem fins lucrativos.
+                Fundada em 2004 como Associação Ebenézer.
+                Em 2020 nossa ONG renasce com o nome Associação Alegria do Amanhã, 
+                acreditando que podemos ajudar os necessitados a darem um passo rumo a um 
+                futuro melhor, a recuperarem sua dignidade, até que consigam se restabelecer 
+                diante da sociedade com trabalho e vida social digna para qualquer ser humano.
             </Text>
 
             <Pressable style={styles.card}>
-                <Text style={styles.cardTitulo}>Doações de Alimentos</Text>
+                <Text style={styles.cardTitulo}>Doações </Text>
                 <Text style={styles.cardDesc}>
-                    Ajude famílias em situação de vulnerabilidade com sua contribuição.
+                    Você pode nos ajudar com qualquer tipo de doação, ficaremos felizes 
+                    em recebe-la, seja em valores, roupas, alimentos não perecíveis, 
+                    produtos de higiene e limpeza, móveis, eletroeletrônicos, entre outros.
                 </Text>
             </Pressable>
             <Pressable style={styles.card}>
-                <Text style={styles.cardTitulo}>Aulas de Música</Text>
-                <Text style={styles.cardDesc}>Mudando vidas através da música.</Text>
+                <Text style={styles.cardTitulo}>Atividas Culturais</Text>
+                <Text style={styles.cardDesc}>Mudando vidas através da cultura.</Text>
             </Pressable>
             <Pressable style={styles.botao}>
                 <Text style={styles.botaoTexto}>Saiba Mais</Text>
@@ -47,11 +51,11 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   descricao: {
-    fontSize: 20,
+    fontSize: 17,
     marginBottom: 20,
-    marginTop: 40,
+    marginTop: 20,
     color: "#005639ff",
-    lineHeight: 28,
+    lineHeight: 20,
   },
   titulo: {
     fontSize: 45,

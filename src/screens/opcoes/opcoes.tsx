@@ -1,9 +1,9 @@
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
-import { router } from "expo-router";
+import { Link } from "expo-router";
 
-export default function Opcoes({ navigation }: any) {
+export default function Opcoes() {
   return (
     <View style={styles.container}>
       
@@ -24,11 +24,12 @@ export default function Opcoes({ navigation }: any) {
         <Text style={styles.seta}>{">"}</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.botao} >
-        <Text style={styles.botaoTexto}>Sobre Nós</Text>
-        <Text style={styles.seta}>{">"}</Text>
-      </TouchableOpacity>
-
+      <Link href="/sobrenos" asChild>
+              <TouchableOpacity style={styles.botao}>
+                <Text style={styles.botaoTexto}>Sobre Nós</Text>
+                <Text style={styles.seta}>{">"}</Text>
+              </TouchableOpacity>
+            </Link>
       <TouchableOpacity style={styles.botao}>
         <Text style={styles.botaoTexto}>Contatos</Text>
         <Text style={styles.seta}>{">"}</Text>

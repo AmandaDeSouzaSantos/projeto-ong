@@ -22,7 +22,7 @@ export default function Home() {
 
       <Link href="/opcoes" asChild>
         <TouchableOpacity style={styles.botaoContainer}>
-          <Text style={styles.botaoTexto}>Ações</Text>
+          <Text style={styles.botaoTexto}>+</Text>
         </TouchableOpacity>
       </Link>
 

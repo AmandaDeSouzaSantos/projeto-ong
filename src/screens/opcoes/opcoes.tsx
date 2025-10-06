@@ -1,10 +1,11 @@
 import React from "react";
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, TouchableOpacity, View , ScrollView} from "react-native";
 import { styles } from "./styles";
 import { Link } from "expo-router";
 
 export default function Opcoes() {
   return (
+     <ScrollView>
     <View style={styles.container}>
       
       <Text style={styles.titulo}>Associação Alegria do Amanhã</Text>
@@ -34,6 +35,11 @@ export default function Opcoes() {
         <Text style={styles.botaoTexto}>Contatos</Text>
         <Text style={styles.seta}>{">"}</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.botao}>
+        <Text style={styles.botaoTexto}>Parceiros</Text>
+        <Text style={styles.seta}>{">"}</Text>
+      </TouchableOpacity>
     </View>
+    </ScrollView>
   );
 }

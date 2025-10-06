@@ -1,10 +1,11 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, Image, TouchableOpacity, ScrollView} from "react-native";
 import { Link } from "expo-router";
 import {styles} from "./styles"
 
 export default function SobreNos() {
   return (
+    <ScrollView>
     <View style={styles.container}>
         <View style={styles.cabecalho}>
             <Text style={styles.titulo}>Sobre Nós</Text>
@@ -40,5 +41,6 @@ export default function SobreNos() {
               </TouchableOpacity>
         </Link>
     </View>
+    </ScrollView>
   );
 }

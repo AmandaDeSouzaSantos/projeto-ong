@@ -1,10 +1,11 @@
-import React from "react";
-import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { Link } from "expo-router";
-import {styles} from "./styles"
+import React from "react";
+import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { styles } from "./styles";
 
 export default function NossaHistoria() {
   return (
+    <ScrollView>
     <View style={styles.container}>
         <View style={styles.cabecalho}>
             <Text style={styles.titulo}>Nossa Historia</Text>
@@ -24,10 +25,11 @@ export default function NossaHistoria() {
 Em 2020 nossa ONG renasce com o nome Associação Alegria do Amanhã, acreditando que podemos ajudar os necessitados a darem um passo rumo a um futuro melhor, a recuperarem sua dignidade, até que consigam se restabelecer diante da sociedade com trabalho e vida social digna para qualquer ser humano.
       </Text>
         <Link href="/sobrenos" asChild>
-              <TouchableOpacity style={styles.botaoContainer}>
-                <Text style={styles.botaoVoltar}>{"<"}</Text>
-              </TouchableOpacity>
+                      <TouchableOpacity style={styles.botaoVoltar}>
+                        <Text style={styles.botaoNavegar}>{"<"}</Text>
+                      </TouchableOpacity>
         </Link>
     </View>
+    </ScrollView>
   );
 }

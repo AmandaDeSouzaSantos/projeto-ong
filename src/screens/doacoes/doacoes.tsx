@@ -3,12 +3,12 @@ import React from "react";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
-export default function Acoes() {
+export default function Doacoes() {
   return (
     <ScrollView>
     <View style={styles.container}>
         <View style={styles.cabecalho}>
-            <Text style={styles.titulo}>Ações</Text>
+            <Text style={styles.titulo}>Doações</Text>
 
             <Image
                 source={require("../../../assets/images/logo.png")} 
@@ -16,16 +16,23 @@ export default function Acoes() {
             />
         </View> 
         <View style={styles.cardImagem}>
-            <Text style={styles.cardTexto}>Adicionar Imagem carrosel</Text>
+            <Text style={styles.cardTexto}>Adicionar Imagem Doacoes</Text>
         </View>
 
       <Text style={styles.texto}>
-        Essas ações mudam vidas,
-e essas vidas vão mudar o mundo.
+       Se você pode nos ajudar com qualquer tipo de doação, ficaremos felizes em recebe-la, seja em valores, roupas, alimentos não perecíveis, produtos de higiene e limpeza, móveis, eletroeletrônicos, entre outros...
 
-Por acreditarmos nisso, como a Associação Alegria do Amanhã, atuamos em diversas áreas, com palestras nas áreas da saúde física, mental e emocional, cursos de idiomas, eventos voltados para ações sociais. Sempre com a visão de possibilitar na vida de crianças, adolescentes e adultos uma nova perspectiva de vida.
+​
+
+Com o pouco de muitos conseguiremos fazer uma grande mudança e impactar vidas.
+Para Doação de valores entre no nosso site:
         
       </Text>
+            <Link href="https://www.alegriadoamanha.org/suadoacao" >
+                    <TouchableOpacity style={styles.botao}>
+                      <Text style={styles.botaoTexto}>Site</Text>
+                    </TouchableOpacity>
+                  </Link>
         <Link href="/opcoes" asChild>
                       <TouchableOpacity style={styles.botaoVoltar}>
                         <Text style={styles.botaoNavegar}>{"<"}</Text>

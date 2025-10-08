@@ -1,23 +1,17 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+    cabecalho:{
+    display: 'flex',
+    flexDirection: "row",
+    justifyContent: 'center',
+    alignItems: "center",
+    },
   container: {
     flex: 1,
-    backgroundColor: "#166534",
+    backgroundColor: "#fff",
     alignItems: "center",
-    padding: 20
-  },
-   cabecalho:{
-        display: 'flex',
-        flexDirection: "row",
-        justifyContent: 'center',
-        alignItems: "center",
-    },
-   conteudo: {
-    flex: 1,
-    backgroundColor: "#e4eee8ff",
-    alignItems: "center",
-    margin: 20,
+    padding: 20,
   },
   titulo: {
     fontSize: 20,

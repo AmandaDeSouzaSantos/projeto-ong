@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#FFFDF6",
     alignItems: "center",
     paddingTop: 40,
+    fontStyle: "italic"
   },
   titulo: {
     fontSize: 20,

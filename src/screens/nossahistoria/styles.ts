@@ -1,23 +1,27 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
+  scroll: {
+    backgroundColor: "#025220ff"
+  },
   container: {
     flex: 1,
-    backgroundColor: "#166534",
-    alignItems: "center",
-    padding: 20
+    padding: 20,
+   alignItems: 'center'
   },
    cabecalho:{
         display: 'flex',
         flexDirection: "row",
-        justifyContent: 'center',
-        alignItems: "center",
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
    conteudo: {
     flex: 1,
-    backgroundColor: "#e4eee8ff",
     alignItems: "center",
+    justifyContent: 'center',
     margin: 20,
+    borderRadius: 20,
+    maxWidth: 1000
   },
   titulo: {
     fontSize: 20,
@@ -35,7 +39,10 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     color: "#000",
     textAlign: "center",
-    marginBottom: 20,
+    backgroundColor: "#f8fcf9ff",
+    borderRadius: 20,
+    padding: 15,
+    margin: 15
   },
   botao: {
     backgroundColor: "#16a34a", // verde
@@ -50,12 +57,11 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   cardImagem: {
-    width: "90%",
-    height: 300,
-    backgroundColor: "#e5e7eb", // cinza claro
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: 8,
+    maxHeight : 400,
+    backgroundColor: "#f8fcf9ff",
+    borderRadius: 20,
+    padding: 15,
+    margin: 15
   },
   cardTexto: {
     color: "#333",

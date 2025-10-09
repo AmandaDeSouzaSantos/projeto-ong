@@ -5,7 +5,7 @@ import { styles } from "./styles";
 
 export default function NossaHistoria() {
   return (
-    <ScrollView>
+    <ScrollView style={styles.scroll}>
     <View style={styles.container}>
         <View style={styles.cabecalho}>
             <Text style={styles.titulo}>Nossa Historia</Text>
@@ -25,12 +25,12 @@ export default function NossaHistoria() {
     ​
     Em 2020 nossa ONG renasce com o nome Associação Alegria do Amanhã, acreditando que podemos ajudar os necessitados a darem um passo rumo a um futuro melhor, a recuperarem sua dignidade, até que consigam se restabelecer diante da sociedade com trabalho e vida social digna para qualquer ser humano.
           </Text>
-          <Link href="/sobrenos" asChild>
+        </View>
+        <Link href="/sobrenos" asChild>
                         <TouchableOpacity style={styles.botaoVoltar}>
                           <Text style={styles.botaoNavegar}>{"<"}</Text>
                         </TouchableOpacity>
           </Link>
-        </View>
     </View>
     </ScrollView>
   );

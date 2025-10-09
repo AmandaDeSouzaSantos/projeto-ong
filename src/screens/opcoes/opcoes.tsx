@@ -40,9 +40,9 @@ export default function Opcoes() {
                 <Text style={styles.seta}>{">"}</Text>
               </TouchableOpacity>
             </Link>
-      <Link href="/opcoes" asChild>
+      <Link href="/parceiros" asChild>
               <TouchableOpacity style={styles.botao}>
-                <Text style={styles.botaoTexto}>Contatos</Text>
+                <Text style={styles.botaoTexto}>Parceiros</Text>
                 <Text style={styles.seta}>{">"}</Text>
               </TouchableOpacity>
             </Link>

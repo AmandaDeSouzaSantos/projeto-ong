@@ -1,33 +1,29 @@
 import { Link } from "expo-router";
 import React from "react";
-import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "./styles";
-
+import { Image, ImageBackground, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { globalStyles } from "../../styles/styleglobal";
 
 export default function Home() {
   return (
-    <ScrollView>
-    <View style={styles.container}>
-      
-      <Image
-        source={require("../../../assets/images/logo.png")}
-        style={styles.logo}
-      />
+    <ScrollView >
+      <ImageBackground
+        source={require("../../../assets/images/maos.jpg")}
+      >
+        <View style={globalStyles.containerhome}>
+          <Image
+            source={require("../../../assets/images/logo.png")}
+            style={globalStyles.logo}
+          />
 
-      <Image
-       source={require("../../../assets/images/maos.jpg")}
-        style={styles.imagem}
-      />
+          <Text style={globalStyles.titulo}>Seja Bem-Vindo!!</Text>
 
-      <Text style={styles.textoBemVindo}>Seja Bem Vindo!!</Text>
-
-      <Link href="/opcoes" asChild>
-        <TouchableOpacity style={styles.botaoContainer}>
-          <Text style={styles.botaoTexto}>+</Text>
-        </TouchableOpacity>
-      </Link>
-
-    </View>
+          <Link href="/opcoes" asChild>
+            <TouchableOpacity style={globalStyles.botao}>
+              <Text style={globalStyles.botaoTexto}>+</Text>
+            </TouchableOpacity>
+          </Link>
+        </View>
+      </ImageBackground>
     </ScrollView>
   );
 }

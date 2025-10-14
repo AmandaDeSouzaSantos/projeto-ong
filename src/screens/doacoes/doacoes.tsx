@@ -1,44 +1,52 @@
 import { Link } from "expo-router";
 import React from "react";
 import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
-import { styles } from "./styles";
+import { globalStyles } from "../../styles/styleglobal";
 
 export default function Doacoes() {
   return (
-    <ScrollView>
-    <View style={styles.container}>
-        <View style={styles.cabecalho}>
-            <Text style={styles.titulo}>Doações</Text>
+    <ScrollView contentContainerStyle={globalStyles.scrollContainer}>
+      <View style={globalStyles.container}>
 
-            <Image
-                source={require("../../../assets/images/logo.png")} 
-                style={styles.logo}
-            />
-        </View> 
-        <View style={styles.cardImagem}>
-            <Text style={styles.cardTexto}>Adicionar Imagem Doacoes</Text>
+        <View style={globalStyles.cabecalho}>
+          <Text style={globalStyles.titulo}>Doações</Text>
+          <Image
+            source={require("../../../assets/images/logo.png")} 
+            style={globalStyles.logo}
+          />
         </View>
 
-      <Text style={styles.texto}>
-       Se você pode nos ajudar com qualquer tipo de doação, ficaremos felizes em recebe-la, seja em valores, roupas, alimentos não perecíveis, produtos de higiene e limpeza, móveis, eletroeletrônicos, entre outros...
 
-​
+        <View style={globalStyles.cardImagem}>
+          <Text style={globalStyles.cardTexto}>Adicionar Imagem Doações</Text>
+        </View>
 
-Com o pouco de muitos conseguiremos fazer uma grande mudança e impactar vidas.
-Para Doação de valores entre no nosso site:
-        
-      </Text>
-            <Link href="https://www.alegriadoamanha.org/suadoacao" >
-                    <TouchableOpacity style={styles.botao}>
-                      <Text style={styles.botaoTexto}>Site</Text>
-                    </TouchableOpacity>
-                  </Link>
-        <Link href="/opcoes" asChild>
-                      <TouchableOpacity style={styles.botaoVoltar}>
-                        <Text style={styles.botaoNavegar}>{"<"}</Text>
-                      </TouchableOpacity>
+        {/* Texto explicativo */}
+        <Text style={globalStyles.texto}>
+          Se você pode nos ajudar com qualquer tipo de doação, ficaremos felizes
+          em recebê-la, seja em valores, roupas, alimentos não perecíveis,
+          produtos de higiene e limpeza, móveis, eletroeletrônicos, entre outros.
+        </Text>
+
+        <Text style={globalStyles.texto}>
+          Com o pouco de muitos conseguiremos fazer uma grande mudança e
+          impactar vidas. Para doação de valores, entre no nosso site:
+        </Text>
+
+        {/* Botão de ação */}
+        <Link href="https://www.alegriadoamanha.org/suadoacao" asChild>
+          <TouchableOpacity style={globalStyles.botao}>
+            <Text style={globalStyles.botaoTexto}>Site</Text>
+          </TouchableOpacity>
         </Link>
-    </View>
+
+        {/* Botão de voltar fixo */}
+        <Link href="/opcoes" asChild>
+          <TouchableOpacity style={globalStyles.botaoVoltar}>
+            <Text style={globalStyles.botaoNavegar}>{"<"}</Text>
+          </TouchableOpacity>
+        </Link>
+      </View>
     </ScrollView>
   );
 }

@@ -7,7 +7,7 @@ export default function Parceiros() {
   return (
     <ScrollView contentContainerStyle={globalStyles.scrollContainer}>
       <View style={globalStyles.container}>
-        {/* Cabeçalho */}
+   
         <View style={globalStyles.cabecalho}>
           <Text style={globalStyles.titulo}>Parceiros</Text>
 
@@ -17,7 +17,6 @@ export default function Parceiros() {
           />
         </View>
 
-        {/* Texto principal */}
         <Text style={globalStyles.texto}>
           Nossos parceiros têm o prazer em cooperar financeiramente ou através
           de sua mão de obra especializada e qualificada, para viabilizar cada
@@ -30,14 +29,12 @@ export default function Parceiros() {
           entender que a ajuda deles pode mudar vidas!
         </Text>
 
-        {/* Botão para se tornar parceiro */}
         <Link href="https://www.alegriadoamanha.org/contato" asChild>
           <TouchableOpacity style={globalStyles.botao}>
             <Text style={globalStyles.botaoTexto}>Torne-se um Parceiro</Text>
           </TouchableOpacity>
         </Link>
 
-        {/* Botão de voltar */}
         <Link href="/opcoes" asChild>
           <TouchableOpacity style={globalStyles.botaoVoltar}>
             <Text style={globalStyles.botaoNavegar}>{"<"}</Text>

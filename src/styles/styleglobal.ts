@@ -3,17 +3,16 @@ import { StyleSheet } from "react-native";
 export const globalStyles = StyleSheet.create({
   scrollContainer: {
     flexGrow: 1,
-    backgroundColor: "#f8f9f4",
+    backgroundColor: "#1b7a41",
   },
 
   container: {
     flex: 1,
-    backgroundColor: "#f8f9f4",
     alignItems: "center",
     justifyContent: "flex-start",
     paddingHorizontal: 20,
     paddingTop: 40,
-    paddingBottom: 100, 
+    paddingBottom: 100,
   },
 
   cabecalho: {
@@ -32,7 +31,7 @@ export const globalStyles = StyleSheet.create({
   titulo: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#166534",
+    color: "#dffae9ff",
     textAlign: "center",
     marginBottom: 10,
   },
@@ -50,32 +49,33 @@ export const globalStyles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     elevation: 2,
   },
+
   cardImagemItem: {
-  borderRadius: 20,
-  width: 400, 
-  height: 220,
-  shadowColor: "#000",
-  shadowOpacity: 0.08,
-  shadowRadius: 6,
-  shadowOffset: { width: 0, height: 2 },
-  elevation: 2,
-},
+    borderRadius: 20,
+    width: 400,
+    height: 220,
+    shadowColor: "#000",
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 2 },
+    elevation: 2,
+  },
 
   cardTexto: {
-    color: "#666",
+    color: "#dffae9ff",
     fontSize: 14,
   },
 
   texto: {
     fontSize: 16,
-    color: "#222",
+    color: "#dffae9ff",
     textAlign: "center",
     lineHeight: 22,
     marginBottom: 20,
   },
 
   botao: {
-    backgroundColor: "#1b7a41",
+    backgroundColor: "#dffae9ff",
     borderRadius: 30,
     paddingVertical: 12,
     paddingHorizontal: 40,
@@ -90,7 +90,7 @@ export const globalStyles = StyleSheet.create({
   },
 
   botaoTexto: {
-    color: "#fff",
+    color: "#166534",
     fontSize: 16,
     fontWeight: "bold",
     textAlign: "center",
@@ -102,7 +102,7 @@ export const globalStyles = StyleSheet.create({
     left: 20,
     width: 50,
     height: 50,
-    backgroundColor: "#166534",
+    backgroundColor: "#dffae9ff",
     borderRadius: 25,
     alignItems: "center",
     justifyContent: "center",
@@ -114,12 +114,14 @@ export const globalStyles = StyleSheet.create({
   },
 
   botaoNavegar: {
-    color: "#fff",
+    color: "#1b7a41",
     fontSize: 22,
     fontWeight: "bold",
-  }, botaoopcao: {
-    backgroundColor: "#1b7a41",
-    width: '75%',
+  },
+
+  botaoopcao: {
+    backgroundColor: "#dffae9ff",
+    width: "75%",
     borderRadius: 30,
     paddingVertical: 12,
     paddingHorizontal: 40,
@@ -131,14 +133,50 @@ export const globalStyles = StyleSheet.create({
     shadowRadius: 5,
     shadowOffset: { width: 0, height: 3 },
     elevation: 3,
-  },containerhome: {
+  },
+
+  containerhome: {
     flex: 1,
-    backgroundColor: "#f8f9f4",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "center",
     paddingHorizontal: 20,
-    paddingTop: 40,
-    paddingBottom: 100, 
-    height: 700
-  }
+    backgroundColor: "rgba(0,0,0,0.4)", // leve escurecimento para contraste
+  },
+
+  // 🔹 NOVOS ESTILOS ESPECÍFICOS PARA A HOME 🔹
+  background: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+  },
+
+  tituloBranco: {
+    fontSize: 26,
+    fontWeight: "bold",
+    color: "#fff",
+    textAlign: "center",
+    marginBottom: 20,
+  },
+
+  botaoBranco: {
+    backgroundColor: "#fff",
+    borderRadius: 30,
+    paddingVertical: 12,
+    paddingHorizontal: 40,
+    alignItems: "center",
+    justifyContent: "center",
+    marginVertical: 10,
+    shadowColor: "#000",
+    shadowOpacity: 0.15,
+    shadowRadius: 5,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 3,
+  },
+
+  botaoTextoVerde: {
+    color: "#1b7a41",
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
 });

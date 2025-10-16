@@ -16,12 +16,6 @@ export default function Doacoes() {
           />
         </View>
 
-
-        <View style={globalStyles.cardImagem}>
-          <Text style={globalStyles.cardTexto}>Adicionar Imagem Doações</Text>
-        </View>
-
-        {/* Texto explicativo */}
         <Text style={globalStyles.texto}>
           Se você pode nos ajudar com qualquer tipo de doação, ficaremos felizes
           em recebê-la, seja em valores, roupas, alimentos não perecíveis,
@@ -33,14 +27,12 @@ export default function Doacoes() {
           impactar vidas. Para doação de valores, entre no nosso site:
         </Text>
 
-        {/* Botão de ação */}
         <Link href="https://www.alegriadoamanha.org/suadoacao" asChild>
           <TouchableOpacity style={globalStyles.botao}>
             <Text style={globalStyles.botaoTexto}>Site</Text>
           </TouchableOpacity>
         </Link>
 
-        {/* Botão de voltar fixo */}
         <Link href="/opcoes" asChild>
           <TouchableOpacity style={globalStyles.botaoVoltar}>
             <Text style={globalStyles.botaoNavegar}>{"<"}</Text>

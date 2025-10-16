@@ -16,9 +16,6 @@ export default function NossaHistoria() {
           />
         </View>
 
-        <View style={globalStyles.cardImagem}>
-          <Text style={globalStyles.cardTexto}>Adicionar Imagem</Text>
-        </View>
 
         <Text style={globalStyles.texto}>
           Fundada em 2004 como Associação Ebenézer, nossas atividades se

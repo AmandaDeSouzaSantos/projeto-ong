@@ -6,7 +6,7 @@ import { getAcoesImages, ImageItem } from "../../../scripts/acoes";
 
 export default function Acoes() {
   const [imagens, setImagens] = useState<ImageItem[]>([]);
-  const [indiceAtual, setIndiceAtual] = useState(0); // qual imagem está mostrando
+  const [indiceAtual, setIndiceAtual] = useState(0); 
 
   useEffect(() => {
     const loadImagens = async () => {
@@ -19,15 +19,14 @@ export default function Acoes() {
 
   const proximaImagem = () => {
     if (imagens.length === 0) return;
-    setIndiceAtual((prev) => (prev + 1) % imagens.length); // volta pro início se chegar ao final
+    setIndiceAtual((prev) => (prev + 1) % imagens.length); 
   };
 
-  const imagemAtual = imagens[indiceAtual]; // pega a imagem atual
-
+  const imagemAtual = imagens[indiceAtual]; 
   return (
     <ScrollView contentContainerStyle={globalStyles.scrollContainer}>
       <View style={globalStyles.container}>
-        {/* Cabeçalho */}
+    
         <View style={globalStyles.cabecalho}>
           <Text style={globalStyles.titulo}>Ações</Text>
           <Image source={require("../../../assets/images/logo.png")} style={globalStyles.logo} />
@@ -48,7 +47,7 @@ export default function Acoes() {
           </View>
         )}
 
-        {/* Textos */}
+
         <Text style={globalStyles.texto}>
           Essas ações mudam vidas, e essas vidas vão mudar o mundo.
         </Text>
@@ -59,7 +58,7 @@ export default function Acoes() {
           uma nova perspectiva de vida.
         </Text>
 
-        {/* Botão voltar */}
+       
         <Link href="/opcoes" asChild>
           <TouchableOpacity style={globalStyles.botaoVoltar}>
             <Text style={globalStyles.botaoNavegar}>{"<"}</Text>

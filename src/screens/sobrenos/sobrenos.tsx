@@ -31,9 +31,6 @@ export default function SobreNos() {
           </TouchableOpacity>
         </Link>
 
-        <View style={styles.cardImagem}>
-          <Text style={styles.cardTexto}>Adicionar Imagem</Text>
-        </View>
 
         <Link href="/opcoes" asChild>
           <TouchableOpacity style={styles.botaoVoltar}>

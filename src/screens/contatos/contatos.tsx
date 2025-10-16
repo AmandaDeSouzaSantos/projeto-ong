@@ -16,9 +16,7 @@ export default function Contatos() {
           />
         </View>
 
-        <View style={globalStyles.cardImagem}>
-          <Text style={globalStyles.cardTexto}>Adicionar Imagem Contatos</Text>
-        </View>
+        
 
         <Text style={globalStyles.texto}>
           Caso queira falar conosco, entre em contato pelos nossos canais de comunicação.
